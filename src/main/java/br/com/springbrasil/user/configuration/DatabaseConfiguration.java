@@ -26,9 +26,9 @@ public class DatabaseConfiguration {
         PostgresConfig postgresConfig = new PostgresConfig(
             Version.V9_6_5,
             new AbstractPostgresConfig.Net("localhost", Network.getFreeServerPort()),
-            new AbstractPostgresConfig.Storage("spring"),
+            new AbstractPostgresConfig.Storage("spring_dashboard_user_db"),
             new AbstractPostgresConfig.Timeout(),
-            new AbstractPostgresConfig.Credentials("spring", "spring")
+            new AbstractPostgresConfig.Credentials("noob", "10203040")
         );
 
         PostgresStarter<PostgresExecutable, PostgresProcess> runtime = PostgresStarter.getDefaultInstance();
